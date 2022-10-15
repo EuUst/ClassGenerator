@@ -10,6 +10,13 @@ namespace Pare_task
     {
         public void CreateCSFile(ClassData data, string path)
         {
+            /*
+            Нет смысла в именовании всех этих строк, лучше было создать StringBuilder или List<string>
+
+            Не стоит конкатенировать строки через "+", используй интерполяцию
+
+            Строки не строит изменять через +=
+             */
             string endOfString = ";";
 
             string firstLine = $"namespace {data.ClassName}";
